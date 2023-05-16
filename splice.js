@@ -1,3 +1,5 @@
+// splice(pos, deleteCount, ...items) – at index pos deletes deleteCount elements and inserts items.
+
 // splice method
 const arr = ["ab","cd","ef"]
 arr.splice(1,1) //from index 1 del 1 element
