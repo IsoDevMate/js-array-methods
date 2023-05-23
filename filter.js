@@ -7,4 +7,4 @@ let users = [
 // returns array of the first two users
 let someUsers = users.filter(item => item.id < 3);
 
-alert(someUsers.length);
+console.log(someUsers.length);
