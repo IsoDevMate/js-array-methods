@@ -18,3 +18,11 @@ console.log(removed);
 const arr4 = [ "ak","tk","br","cd"]
 arr4.splice(2,0,"come on","let up join")
 console.log(arr4);
+
+let array = [1, 2, 5];
+
+// from index -1 (one step from the end)
+// delete 0 elements,
+// then insert 3 and 4
+array.splice(-1, 0, 3, 4);
+console.log( array ); // 1,2,3,4,5
