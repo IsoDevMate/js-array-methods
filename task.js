@@ -18,7 +18,7 @@ return arr
 }
 
 
-//below is alterntive  correct solutions
+//below is alternative  correct solutions
 
 
 const camelize = str => {
