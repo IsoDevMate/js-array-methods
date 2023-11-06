@@ -1,5 +1,20 @@
 // splice(pos, deleteCount, ...items) – at index pos deletes deleteCount elements and inserts items.
 
+
+// It uses the splice method to remove one element (the game) starting from the gameIndex. 
+//The splice method modifies the original array and returns an array of the deleted elements.
+
+const id = '2'
+
+const examplefn=({id})=>{
+const gameIndex = db.games.findIndex(game => game.id === id)  //return the index of the game
+if (gameIndex === -1) throw new Error('Game not found')
+const deletedGames = db.games.splice(gameIndex, 1)
+return deletedGames[0]
+}
+
+console.log(examplefn(id));
+
 // splice method
 const arr = ["ab","cd","ef"]
 arr.splice(1,1) //from index 1 del 1 element
